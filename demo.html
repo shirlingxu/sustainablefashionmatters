@@ -1,0 +1,102 @@
+<!-- Shirling Xu -->
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- The head tag contains a lot of the metadata about your file  -->
+  <head>
+    <!-- The title tag names the page in your browser (look at the tab's name in your browser) -->
+    <title>Sustainable Fashion Matters</title>
+    <!-- This is how you link an external CSS style sheet to your HTML file. Make sure your style sheet is in the same directory (folder) as your HTML file. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- The body tag defines the body of your document. It contains all the contents of the HTML document -->
+  <body>
+    <div id="head">Sustainable Fashion Matters
+      <script>
+        var titleTranslations = ["La Moda Sostenible Importa", "الموضة المستدامة مهمة", "La Mode Durable Compte", "지속 가능한 패션 사항", "ເລື່ອງແຟຊັ່ນແບບຍືນຍົງ"];
+        var counter = 0;
+        var elem = document.getElementById("head");
+        var inst = setInterval(change, 8000);
+        function change() {
+          elem.innerHTML = titleTranslations[counter];
+          counter++;
+          if (counter >= titleTranslations.length) {
+            counter = 0;
+          }
+        }
+      </script>
+    </div>
+    <div class="nav">
+      <a href="demo.html">Home</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div id="content">
+    <img src="images/fashion.jpg" alt="Fashion" class="picture" />
+    <h2>Why sustainable fashion is important:</h2>
+    <p>Fast fashion is cheap, but at what cost? Companies like Forever21 and H&M have been taking over the fashion industry for years, contributing to mass textile waste and environmental pollution. </p>
+    <p>Sustainable fashion is important, but it goes beyond the label. Purchasing garments made with durable fabrics and materials is an example of shopping sustainably, which can greatly benefit the environment. Although sustainable garments can be more expensive, they are made to last so they're worth it in the long run.</p>
+    <p>Sustainable brands care about ethics. They take the processes of producing and transporting the products into account and therefore benefit the environment.</p>
+
+    <h3>Pros and Cons</h3>
+      <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Pros</th>
+          <th>Cons</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Shopping at Goodwill</b></td>
+          <td>- Affordable clothes and shoes<br>- Unique, vintage styles<br>- Finds a new home for loved items<br>- Saves items from the landfill</td>
+          <td>- Bulk purchases for reselling takes away <br>clothes from people in need</td>
+          <td>"I love shopping second-hand because I can find incredible vintage clothes for cheap while being sustainable." -Jane Doe</td>
+        </tr>
+        <tr>
+          <td><b>Shopping at Sustainable <br>Fashion Brands</b></td>
+          <td>- Support ethical businesses<br>- Quality items with a long lifespan<br>- Manufacture process uses less <br>water </td>
+          <td>- Expensive clothes and shoes</td>
+          <td>"Shopping sustainable brands is a worthwhile investment that saves me money in the long run." -John Doe</td>
+        </tr>
+        <tr>
+          <td><b>Shopping at Fast Fashion Brands</b></td>
+          <td>- Affordable clothes and shoes</td>
+          <td>- Low quality items that have to be<br>repurchased yearly<br>- Production causes textile waste <br>and environmental pollution</td>
+          <td>"I bought a shirt at a fast fashion company and it said 'Pineapples and Addison Rae.' I don't get it, and it fell apart after I wore it once." -Joe Mama</td>
+        </tr>
+      </tbody>
+      </table>
+
+    <!-- the h tags progressively get smaller, so h2 is smaller than h1 (you can go h1-h6)-->
+    <a href="http://shopgoodwill.com/"><img src="images/recycle.jpeg" alt="Recycle" class="round-picture" style="display:inline-block;"></a>
+    <div style="display:inline-block;margin:50px;">
+    <h3>Brands to explore:</h3>
+    <ul><li><a href="http://patagonia.com/">Patagonia</a></li>
+    <li><a href="http://eileenfisher.com/">Eileen Fisher</a></li>
+    <li><a href="http://thereformation.com/">Reformation</a></li>
+    <li><a href="http://levi.com/">Levi's</a></li>
+    <li><a href="http://fairindigo.com/">Fair Indigo</a></li>
+    <li><a href="http://peopletree.co.uk/">People Tree</a></li>
+    <li><a href="http://whimsyandrow.com/">Whimsy + Row</a></li>
+    <li><a href="http://moonsoonlondon.com/">Monsoon</a></li></ul>
+    </div>
+    <!-- The p tag contains a paragraph -->
+    <p>
+      Click on the recycle sign image to shop at Goodwill online.
+      <a href="http://shopgoodwill.com/">
+        Shop second-hand; it's good for the environment!
+      </a>
+    </p>
+
+    <p id="text"></p>
+
+  </div>
+  </body>
+
+  <footer>Made with ♥ by <a href="http://linkedin.com/in/shirlingxu/">Shirling Xu</a></footer>
+</html>

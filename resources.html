@@ -1,0 +1,53 @@
+<!-- Shirling Xu -->
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- The head tag contains a lot of the metadata about your file  -->
+  <head>
+    <!-- The title tag names the page in your browser (look at the tab's name in your browser) -->
+    <title>Sustainable Fashion Matters</title>
+    <!-- This is how you link an external CSS style sheet to your HTML file. Make sure your style sheet is in the same directory (folder) as your HTML file. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- The body tag defines the body of your document. It contains all the contents of the HTML document -->
+  <body>
+    <div id="head">Sustainable Fashion Matters
+        <script>
+            var titleTranslations = ["La Moda Sostenible Importa", "الموضة المستدامة مهمة", "La Mode Durable Compte", "지속 가능한 패션 사항", "ເລື່ອງແຟຊັ່ນແບບຍືນຍົງ"];
+            var counter = 0;
+            var elem = document.getElementById("head");
+            var inst = setInterval(change, 8000);
+            function change() {
+              elem.innerHTML = titleTranslations[counter];
+              counter++;
+              if (counter >= titleTranslations.length) {
+                counter = 0;
+              }
+            }
+          </script>
+    </div>
+    <div class="nav">
+        <a href="demo.html">Home</a>
+        <a href="resources.html">Resources</a>
+      </div>
+    <div id="content">
+    <img src="images/infographic.jpg" alt="Infographic" class="picture-with-border" />
+    <h2>Did you know?</h2>
+    <p>The manufacturing process for a single top wastes over 2,700 liters of water. Water is a valuable but scarce resource that we shouldn't take for granted. This mass consumption of water isn't good for the environment, and it can potentially increase the cost of fashion in years to come.</p>
+    <p>Additionally, fabric costs a lot of energy to produce, which is why it has a large <b>carbon footprint.</b> The textile industry is one of the largest sources of greenhouse gas emissions in the world because of the manufacturing process of the fabric and the transportation process to the consumer.</p>
+    <h3>Resources</h3>
+    <p>If you're interested in learning more about sustainable fashion, check out the links below.</p>
+    <li><a href="https://libguides.library.kent.edu/c.php?g=278009&p=1853571">Fashion Resources: Sustainable, Circular & Ethical Fashion: Internet Resources
+    </a></li>
+    <li><a href="http://fashionrevolution.org/">Fashion Revolution</a></li>
+    <h3>Cool research</h3>
+    <p>Check out this research project titled "Thermally-regulative Clothing for Modest Wear," which dives into the design of a sustainable, modest garment made with thermally-regulative material for women.</p>
+    <img src="images/wtp-poster.png" alt="Poster" class="picture-with-border" />
+  </div>
+  </body>
+
+  <footer>Made with ♥ by <a href="http://linkedin.com/in/shirlingxu/">Shirling Xu</a></footer>
+</html>

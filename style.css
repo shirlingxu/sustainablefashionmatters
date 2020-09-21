@@ -1,0 +1,164 @@
+body {
+  background-color: #f1d7c6;
+  font-family: 'Work Sans', sans-serif;
+  text-align:center;
+  margin:20px;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s; 
+}
+
+p {
+  /* Change the color of all paragraphs to green */
+  color: #50443d;
+}
+
+#head{
+  color:#ebebe9;
+  font-size:80px;
+  text-shadow:5px 5px #ce8a48;
+  background:#9DC3C2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Inconsolata', monospace;
+  text-transform:uppercase;
+  font-style:italic;
+  letter-spacing:5px;
+  padding:30px;
+  font-weight:bold;
+  position:fixed;
+}
+
+.head:hover{
+  text-shadow:5px 5px#ebebe9;
+  color:#ce8a48;
+}
+
+.nav{
+  top: 140px;
+  left: 0;
+  width: 100%;
+  background:#ce8a48;
+  font-family: 'Inconsolata', monospace;
+  font-style:italic;
+  letter-spacing:5px;
+  padding:20px;
+  position:fixed;
+}
+
+.nav a{
+  color:#ebebe9;
+  text-decoration:none;
+  background:#9DC3C2;
+  padding:7px;
+  border-radius:5px;
+  border:2px solid #9DC3C2;
+}
+
+#content{
+  margin-top:270px;
+  margin-bottom:100px;
+  width:800px;
+  display:inline-block;
+}
+
+h2{
+  color:#d86d39;
+  font-size:42px;
+}
+
+h3{
+  color:#d86d39;
+  font-size:28px;
+}
+
+a,b{
+  color:#4D7298;
+  padding:3px;
+}
+
+a:active{
+  font-style:italic;
+  color:#50443d;
+}
+
+a:hover{
+  background:#d86d39;
+  color:#ebebe9;
+}
+
+a:visited{
+  font-style:italic;
+}
+
+ul{
+  list-style-type: square;
+  display:inline-block;
+  text-align:left;
+}
+
+table, th, td {
+  border: 5px solid #f1d7c6;
+  padding:10px;
+  border-radius:10px;
+}
+
+th{
+  background:#ce8a48;
+}
+
+td{
+  background:#ebebe9;
+  width:25%;
+}
+
+footer{
+  background:#9DC3C2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding:15px;
+}
+
+.picture {
+  width: 600px;
+  border-radius:15px;
+}
+
+.picture-with-border {
+  width: 600px;
+  border-radius:15px;
+  border:10px solid #ebebe9;
+}
+
+.round-picture{
+  width:250px;
+  height:250px;
+  border-radius:100%;
+  border:10px solid #ebebe9;
+  animation:spin 4s linear infinite;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
